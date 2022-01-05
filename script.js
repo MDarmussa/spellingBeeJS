@@ -41,8 +41,14 @@ e_button.setAttribute("value", "E");
 e_button.classList.add("button", "is-warning", "m-2");
 e_button.innerHTML = "E";
 
+const f_button = document.createElement("button");
+f_button.setAttribute("id", "f_button");
+f_button.setAttribute("value", "F");
+f_button.classList.add("button", "is-warning", "m-2");
+f_button.innerHTML = "F";
+
 const addButton = document.createElement('div');
-addButton.setAttribute("id", "add-button");
+// addButton.setAttribute("id", "add-button");
 addButton.classList.add("button", "is-black");
 addButton.innerHTML = "ADD";
 
@@ -50,11 +56,27 @@ addButton.innerHTML = "ADD";
 //** NOTE: setTimeout is just to slow the load so you can see it. but you could use it to add a CSS loaders and other neat stuff!! :)
 
 //using EventListener "DOMContentLoaded", load the add buttons
-
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        gameDiv.appendChild(addButton)
+    }, 3500)
+});
 
 //using an IIFE, load the letter button
 //Why did I put the letters in the IFFE??  HINT: LOOK AT THE CONSOLE LOG AND SEE WHEN IT FIRES.
-
+(() => {
+setTimeout(() => {
+    loadDiv.classList.toggle('hide');
+    wordDiv.classList.toggle('hide');
+    wordsBankDiv.classList.toggle('hide');
+    letterDiv.appendChild(a_button);
+    letterDiv.appendChild(b_button);
+    letterDiv.appendChild(c_button);
+    letterDiv.appendChild(d_button);
+    letterDiv.appendChild(e_button);
+    letterDiv.appendChild(f_button);
+}, 3000)
+})();
 
 //Step-3 write the listeners to take a letter and add to your word div
 
