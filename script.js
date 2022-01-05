@@ -48,7 +48,7 @@ f_button.classList.add("button", "is-warning", "m-2");
 f_button.innerHTML = "F";
 
 const addButton = document.createElement('div');
-// addButton.setAttribute("id", "add-button");
+addButton.setAttribute("id", "add-button");
 addButton.classList.add("button", "is-black");
 addButton.innerHTML = "ADD";
 
