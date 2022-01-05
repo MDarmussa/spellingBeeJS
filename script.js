@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         gameDiv.appendChild(addButton)
     }, 3500)
+
 });
 
 //using an IIFE, load the letter button
