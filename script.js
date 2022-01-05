@@ -1,11 +1,51 @@
+
 'use strict';
 //get the div items in the game
-
+const gameBoardDiv = document.getElementById('gameboard');
+const loadingBeeDiv = document.getElementById('loadingBee');
+const gameDiv = document.getElementById('game');
+const wordDiv = document.getElementById('word');
+const lettersDiv = document.getElementById('letters');
 
 // get the div items in the wordsBank
-
+    //quesysellector for calling 
+const wordsBankDiv = document.querySelector('#wordsBank');
+const foundTitleH4 = document.querySelector('#foundTitle')
+const wordsDiv = document.querySelector('#words');
 
 //create your buttons
+const a_button = document.createElement('button');
+a_button.classList.add("button", "is-warning", "m-2");
+a_button.setAttribute('value', 'A');
+a_button.innerHTML = 'A';
+
+const b_button = document.createElement('button');
+b_button.classList.add("button", "is-warning", "m-2");
+b_button.setAttribute('value', 'B');
+b_button.innerHTML = 'B';
+
+const c_button = document.createElement('button');
+c_button.classList.add("button", "is-warning", "m-2");
+c_button.setAttribute('value', 'C');
+c_button.innerHTML = 'C';
+
+const d_button = document.createElement('button');
+d_button.classList.add("button", "is-warning", "m-2");
+d_button.setAttribute('value', 'D');
+d_button.innerHTML = 'D';
+
+const e_button = document.createElement('button');
+e_button.classList.add("button", "is-warning", "m-2");
+e_button.setAttribute('value', 'E');
+e_button.innerHTML = 'E';
+
+const f_button = document.createElement('button');
+f_button.classList.add("button", "is-warning", "m-2");
+f_button.setAttribute('value', 'F');
+f_button.innerHTML = 'F';
+
+const addButton = document.createElement('div')
+addButton.classList.add('button', 'is-black') // adding 2 classes for addButton div / line 47
 
 
 //write the function to add the buttons to your HTML on page load
